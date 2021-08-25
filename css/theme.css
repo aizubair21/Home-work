@@ -1,0 +1,56 @@
+/* 
+@font-face {
+    font-family: 'opens-sans-regular';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'oswald-bold';
+    src: url('../fonts/Oswald/static/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'oswald-regular';
+    src: url('../fonts/Oswald/static/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'myrid-pro-regular';
+    src: url('../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF');
+} */
+
+@font-face{
+    font-family : 'sonar-bangla';
+    src: url('../font/Shonar.ttf')
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../font/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'open-sans-extrabold';
+    src: url('../font/OpenSans-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'pacifico';
+    src: url('../font/Pacifico-Regular.ttf');
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('../font/Oswald-VariableFont_wght.ttf');
+}
+p {
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--pg);
+    font-weight: 400;
+    font-family: "opens-sans-regular";
+}
+
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
