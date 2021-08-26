@@ -15,10 +15,49 @@
 
     <!-- theme  -->
     <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/responsibe.css">
     <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsibe.css">
 </head>
 <body>
+
+    <div id="nav">
+        <div class="container">
+            <div class="nav-body">
+                <div class="row">
+                    <div class="d-flex col-sm-12 justify-content-sm-center col-md-6 col-lg-6 col-xl-6 logo-body" >
+                        <h3 class="nav-logo">Business Name</h3>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 main-nav">
+                        <ul>
+    
+                            <li><a href="#">Home</a></li>
+                            <li><a href="%">Service</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Protfolio</a></li>
+                            <li><a href="#">Testimonial</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="small-nav">
+                        <div class="nav-container">
+                            <i class="fas fa-align-left text-white"> Main menue</i>
+                        
+                            <ul class="content d-block">
+                                <li><a href="#"> <i class="me-2 fas fa-home"></i>Home </a></li>
+                                <li><a href="%"> <i class="me-2 fas fa-globe-asia"></i>Service </a></li>
+                                <li><a href="#"> <i class="me-2 fas fa-address-book"></i>About </a></li>
+                                <li><a href="#"> <i class="me-2 fas fa-image"></i>Protfolio</a></li>
+                                <li><a href="#"> <i class="me-2 fas fa-clipboard"></i>Testimonial</a></li>
+                                <li><a href="#"> <i class="me-2 fas fa-phone"></i>Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="banner">
         <div class="overlay"></div>
         <div class="banner-body">
@@ -46,41 +85,9 @@
         </div>
     </div>
 
-    <nav>
-        <div class="container">
-            <div class="row">
-                <div class="d-flex col-sm-12 justify-content-sm-center col-md-6 col-lg-6 col-xl-6" >
-                    <h3 class="">Business Name</h3>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 main-nav">
-                    <ul>
+   
 
-                        <li><a href="#">Home</a></li>
-                        <li><a href="%">Service</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Protfolio</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
 
-                <div class="small-nav">
-                    <div class="nav-container">
-                        <i class="fas fa-align-right text-white"></i>
-                    
-                        <ul class="content d-block">
-                            <li><a href="#">Home <i class="fas fa-home"></i></a></li>
-                            <li><a href="%">Service <i class=" fas fa-globe-asia"></i></a></li>
-                            <li><a href="#">About <i class="fas fa-address-book"></i> </a></li>
-                            <li><a href="#">Protfolio <i class=" fas fa-image"></i></a></li>
-                            <li><a href="#">Testimonial <i class="fas fa-clipboard"></i></a></li>
-                            <li><a href="#">Contact <i class="fas fa-phone"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
     <div id="offer">
         <div class="container">
             <div class="top">
@@ -216,6 +223,28 @@
                 </ul>
             </div>
 
+            <div class="accordion d-sm-none" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Your Choise/Filter
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul>
+                            <li class="active"> <i class=" me-3 fas fa-allergies"></i> All</li>
+                            <li> <i class=" me-3 fas fa-globe-asia"></i> Web</li>
+                            <li> <i class=" me-3 fas fa-paint-brush"></i> logo design</li>
+                            <li> <i class=" me-3 fab fa-wordpress"></i>  WordPress</li>
+                            <li> <i class=" me-3 fas fa-shopping-bag"></i> E-commerse</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
         </div>
 
         <div class="gallery">
@@ -224,7 +253,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work1.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -240,7 +269,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work2.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -256,7 +285,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work3.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -272,7 +301,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work4.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -291,7 +320,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work5.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -307,7 +336,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work6.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -323,7 +352,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work7.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -339,7 +368,7 @@
                     <img class="img-fluid img-thumbnail" src="image/work8.png" alt="">
 
                     <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -367,31 +396,31 @@
         </div>
 
         <div class="d-sm-flex testimonial-row">
-            <div class="col-sm-4 col-md-4  testimonial-body">
+            <div class="col-sm-6 col-md-6  testimonial-body">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum nesciunt cupiditate culpa perferendis, minus consectetur aspernatur nisi. Deleniti, nobis provident fugit quidem rem temporibus veritatis! Officia tenetur corporis eos distinctio architecto eaque excepturi dolorem, rem neque quas cupiditate. Necessitatibus fuga corrupti illo deleniti dicta laudantium quisquam maiores, ab hic?</p>
                 
                 <div>
                     <i class="fas fa-user"></i>
                     <p class="user-heading"> <b>John Doe</b></p>
-                    <p>Company Lnc</p>
+                    <sub>Company Lnc</sub>
                 </div>
 
                 
             </div>
 
-            <div class="col-sm-4 col-md-4  testimonial-body">
+            <div class="col-sm-6 col-md-6  testimonial-body">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum nesciunt cupiditate culpa perferendis, minus consectetur aspernatur nisi. Deleniti, nobis provident fugit quidem rem temporibus veritatis! Officia tenetur corporis eos distinctio architecto eaque excepturi dolorem, rem neque quas cupiditate. Necessitatibus fuga corrupti illo deleniti dicta laudantium quisquam maiores, ab hic?</p>
                 
                 <div>
                     <i class="fas fa-user"></i>
                     <p class="user-heading"> <b>John Doe</b> </p>
-                    <p>Company Lnc</p>
+                    <sub>Company Lnc</sub>
                 </div>
 
             </div>
 
         </div>
-        <div class="span-content">
+        <div class="span-content hide">
             <span class="active"></span>
             <span></span>
             <span></span>
@@ -403,17 +432,17 @@
 
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row top-row">
                 <div class="col-sm-3 col-md-3 col-lg-3 my-3">
                     <h3 style="font-family: 'pacifico';">Business Name</h3>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 my-3">
+                <div class="col-sm-3 col-md-3 col-lg-3 my-3 hide">
                     <h3>Contact</h3>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 my-3">
+                <div class="col-sm-3 col-md-3 col-lg-3 my-3 hide">
                     <h3>Latest Tweets</h3>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 my-3">
+                <div class="col-sm-3 col-md-3 col-lg-3 my-3 hide">
                     <h3>News Letter</h3>
                 </div>
             </div>
@@ -424,7 +453,7 @@
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 my-3">
                     <p>Autem assumenda quam illum dolores ullam reprehenderit ipsa consequatur blanditiis possimus? Modi!</p>
-                    <div>
+                    <div class="contact-info">
                         <div style="display: flex;;">
                             <i class="me-3 mt-2 fas fa-map-marker-alt" style="color: #709dca;"></i>
                             <p>hyderabadh</p>
@@ -439,7 +468,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-3 col-md-3 col-lg-3 hide">
                     <div class="d-flex align-items-start">
                         <i class="fab fa-twitter me-3 mt-4"></i>
                         <div class="my-3">
@@ -457,8 +486,9 @@
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, qui.</p>
-                    <form action="#" class="">
-                        <input class="form-control" type="text" placeholder="Email Address">
+                    <form action="#" class="form-control">
+                        <input class="form-control" type="emain" placeholder="Email Address" aria-describedby="emailHelp">
+                        <div class="form-text" id="emailHelp">We use this email to recognised you.</div>
                         <button type="button" class="form-button">submit</button>
                     </form>
                 </div>
@@ -484,5 +514,7 @@
     <script>
         var container = document.getElementsByClassName("nav-container");
     </script>
+
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

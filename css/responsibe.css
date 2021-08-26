@@ -20,43 +20,45 @@
     .main-nav {
         display: none;
     }
-    .nav-container {
-        position: fixed;
-        z-index: 999;
-        top: 12px;
-        right: 0;
-        padding-right: 10px;
+    #nav .logo-body{
+        width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+    }
+
+    /* nav .nav-logo {
+        display: flex;
+        justify-content: center;
+    } */
+
+    .nav-container {
+        z-index: 999;
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
         font-size: 15px;
-        background-color: gray;
-        width: 100px;
-        height: 25px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        /* background-color: gray; */
+        padding: 5px 15px;
     }
     .small-nav .content {
         /* border: 1px solid; */
         position: fixed;
         z-index: 999;
-        right: -100%;
-        top: 40px;
+        left: -100%;
+        top: 80px;
         width: 50%;
         height: 90vh;
-        text-align: right;
+        text-align: left;
         padding: 10px;
         background-color: rgb(170, 169, 169);
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         transition: .5s;
-        
-        
 
     }
     .small-nav .nav-container:hover .content{
         cursor: pointer;
-        right: 0;
+        left: 0;
     }
     .small-nav .content::before{
         position: absolute;
@@ -71,6 +73,51 @@
         /* border: 1px solid white; */
         transition: .5s;
     }
+
+    #banner {
+        height: 250px;
+    }
+    #banner .banner-body .banner-text h2 {
+        font-size: 20px;
+    }
+    #banner .banner-body .banner-text p {
+        font-size: 13px;
+    }
+    #banner .banner-body .slider-control {
+        display: none;
+    }
+    #banner button {
+        bottom: 10px;
+        width: 90%;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+
+
+    #portfolio .details-list {
+
+        display: none;
+    }
+    #portfolio .accordion ul li{
+        color: black;
+        text-align: left;
+        padding: 5px;
+        transition: .5s;
+    }
+    #portfolio .accordion ul li:hover {
+        color:#b4b632; 
+        cursor: pointer;
+        margin-left: 5px;
+        font-size: ;
+    }
+    #portfolio .overlay div:nth-child(1) img:last-child {
+        top: -141px;
+    }
+
+
+
+
 
     #about-us .about-right {
         text-align: center;
@@ -92,7 +139,7 @@
     #testimonial .testimonial-row .testimonial-body div {
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 100%;
         background-color: rgba(189, 187, 187, 0.418);
         border-radius: 25px;
     }
@@ -101,8 +148,8 @@
         background-color: white;
         border: 1px solid rgba(189, 187, 187, 0.418);
         border-radius: 25px;
-        font-size: 20px;
-        width: 50px;
+        font-size: 25px;
+        width: 10%;
         height: 45px;
         padding: 5px;
         display: flex;
@@ -112,13 +159,29 @@
 
     #testimonial .testimonial-row .testimonial-body p {
         font-style: normal;
-        text-align: center;
+        text-align: justify;
     }
-    #testimonial .testimonial-row .testimonial-body p:first-child {
+    #testimonial .testimonial-row .testimonial-body div .user-heading{
         margin: 0;
-        text-transform: uppercase;
+        font-weight: 600;
     }
-    #testimonial .testimonial-row .testimonial-body p:last-child {
+    #testimonial .testimonial-row .testimonial-body div sub {
         margin: 0;
         font-size: 10px;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+
+    footer .contact-info {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer form button {
+        width: 30%;
+    }
+    .hide {
+        display: none;
     }
