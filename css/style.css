@@ -341,7 +341,10 @@ nav h3 {
 
 /* testimonial */
 #testimonial {
+    width: 100%;
+    height: auto;
     margin: 40px 0;
+    position: relative;
 }
 #testimonial .testimonial-row {
     display: flex;
@@ -349,7 +352,7 @@ nav h3 {
 }
 
 #testimonial .testimonial-body {
-
+    margin: 50px 0;
 }
 #testimonial .testimonial-body h4 {
     font-family: 'open-sans';
@@ -361,7 +364,6 @@ nav h3 {
 #testimonial .testimonial-body div {
     display: flex; 
     justify-content: flex-start;
-    align-items:;
 }
 #testimonial .testimonial-body i {
    
@@ -375,4 +377,46 @@ nav h3 {
     font-family: 'open-sans';
     font-style:normal;
     margin: 0 8px;
+}
+#testimonial .span-content{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#testimonial .span-content span {
+    width: 8px;
+    height: 8px;
+    background-color: #888588;
+    border-radius: 50%;
+    margin: 0 1px;
+
+}
+#testimonial .span-content span.active {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #709dca;
+    background-color:inherit;
+}
+
+
+/* testimonial end  */
+
+/* footer start  */
+footer{
+    background-color: #273a43;
+    height: auto;
+    color: white;
+}
+footer h3 {
+    color: white;
+    font-family: 'open-sans';
+}
+footer i {
+    font-size: 15px;
+
 }
