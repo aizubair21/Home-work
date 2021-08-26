@@ -279,7 +279,9 @@ nav h3 {
 #portfolio img {
     width: 100%;
 }
-
+#portfolio .gallery .row {
+    margin: 15px 0;
+}
 #portfolio .image-container {
     position: relative;
     overflow: hidden;
@@ -416,7 +418,37 @@ footer h3 {
     color: white;
     font-family: 'open-sans';
 }
-footer i {
+footer i, span {
     font-size: 15px;
+    color: #709dca;
 
+}
+footer input{
+    padding: 7px 12px;
+    border: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+footer button{
+    padding: 7px 12px;
+    background-color: #709dca;
+    border: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.footer-last {
+    height: auto;
+    background-color:#18252b;
+    color: white;
+    padding: 10px 0;
+}
+.footer-last .fab{
+    font-size: 15px;
+    padding: 5px;
+    background-color: gray;
+    transition: .5s;
+}
+.footer-last .fab:hover {
+    background-color: #709dca;
 }
