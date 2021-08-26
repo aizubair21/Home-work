@@ -40,29 +40,43 @@
     position: relative;
     margin-bottom: 80px;
 
+
+
 }
+
 nav {
-    position: absolute;
+    position: fixed;
     top: 10px;
     width: 100%;
+    background-color: #709dca;
+    box-shadow: 0px 0xp 5px white;
 }
-#banner .overlay {
-    height: 100%;
-    width: 100%;
-    opacity: .5;
-    background-color: rgba(34, 43, 165, 0.5);
-}
+
 nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+    /* background-color: gray; */
+    height: 100%;
+    padding: 5px;
+   
 }
 
 nav h3 {
     font-family: 'pacifico';
     color: #ffc155;
 }
+
+#banner .overlay {
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    background-color: rgba(34, 43, 165, 0.5);
+}
+
+
+
 
 #banner .banner-text {
     position: absolute;
@@ -181,6 +195,7 @@ nav h3 {
     letter-spacing: normal;
     font-weight: 600;
     height: 20px;
+    transition: .5s;
 }
 #offer .bottom .bottom-row p {
     font-family: 'open-sans';
@@ -192,7 +207,10 @@ nav h3 {
     font-size: 20px;
     transition: .5s;
 }
-#offer .bottom .bottom-row:hover .bottom-left {
+#offer .bottom .bottom-row:hover .bottom-left ,h4 {
+    color: #b4b632; 
+}
+#offer .bottom .bottom-row:hover h4 {
     color: #b4b632; 
 }
 
@@ -205,7 +223,7 @@ nav h3 {
 }
 #about-us .about-left img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 #about-us .about-right {
     display: grid;
@@ -220,10 +238,7 @@ nav h3 {
 #about-us .about-right h3 {
     font-family: 'open-sans-extrabold';
 }
-#about-us .about-right div {
-    margin: 5px 0;
-    width: 80%;
-}
+
 #about-us .about-right p{
     font-family: 'open-sans';
     line-height: normal;
@@ -231,10 +246,12 @@ nav h3 {
 #about-us .about-right button {
     font-family: 'open-sans';
     width: 150px;
-    height: 50px;
+    height: 40px;
     border: none;
     background-color: #e7ad48;
-    border: 1px solid #f8e2bb;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
 }
 
 
@@ -349,14 +366,14 @@ nav h3 {
     position: relative;
 }
 #testimonial .testimonial-row {
-    display: flex;
     justify-content: space-evenly;
 }
 
 #testimonial .testimonial-body {
+    display: block;
     margin: 50px 0;
 }
-#testimonial .testimonial-body h4 {
+#testimonial .testimonial-body p {
     font-family: 'open-sans';
     text-align: left;
     font-size: 13px;
@@ -368,14 +385,13 @@ nav h3 {
     justify-content: flex-start;
 }
 #testimonial .testimonial-body i {
-   
     width: 20px;
     font-size: 18px;
 }
 
-#testimonial .testimonial-body .user-heading{
-    font-size: 10px;
-    font-weight: 800;
+#testimonial .testimonial-row .testimonial-body div .user-heading{
+    font-size: 14px;
+    width: 100px;
     font-family: 'open-sans';
     font-style:normal;
     margin: 0 8px;
@@ -423,18 +439,27 @@ footer i, span {
     color: #709dca;
 
 }
-footer input{
-    padding: 7px 12px;
+footer form {
+    display: inline-block;
+}
+footer form input{
     border: none;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
+    text-align: center;
 }
-footer button{
+footer form button{
+    width: 100%;
     padding: 7px 12px;
-    background-color: #709dca;
+    background:linear-gradient(90deg, transparent, #709dca, transparent);
     border: none;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    margin: 5px 0;
+    text-transform: uppercase;
+    transition: 1s;
+}
+footer form button:hover {
+    background-color:#709dca ;
+    transition: 1s;
 }
 
 .footer-last {

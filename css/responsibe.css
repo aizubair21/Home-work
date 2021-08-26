@@ -1,0 +1,124 @@
+@media (min-width: 576px) {
+   
+    .main-nav{
+        display: block;
+        z-index: 999;
+    }
+    .small-nav {
+        display: none;
+    }
+    #about-us .about-right div {
+        margin: 5px 0;
+        width: 80%;
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+    .main-nav {
+        display: none;
+    }
+    .nav-container {
+        position: fixed;
+        z-index: 999;
+        top: 12px;
+        right: 0;
+        padding-right: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 15px;
+        background-color: gray;
+        width: 100px;
+        height: 25px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .small-nav .content {
+        /* border: 1px solid; */
+        position: fixed;
+        z-index: 999;
+        right: -100%;
+        top: 40px;
+        width: 50%;
+        height: 90vh;
+        text-align: right;
+        padding: 10px;
+        background-color: rgb(170, 169, 169);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: .5s;
+        
+        
+
+    }
+    .small-nav .nav-container:hover .content{
+        cursor: pointer;
+        right: 0;
+    }
+    .small-nav .content::before{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        content: '';
+        border-width: 50px;
+        border: black transparent transparent transparent;
+    }
+    .small-nav .content li {
+        padding: 5px 10px;
+        /* border: 1px solid white; */
+        transition: .5s;
+    }
+
+    #about-us .about-right {
+        text-align: center;
+    }
+    #about-us .about-right div p{
+        padding: 0 20px;
+        text-align: justify;
+    }
+    #about-us .about-right button {
+        width: 50%;
+    }
+
+    #testimonial .testimonial-row .testimonial-body {
+        margin:0px;
+        padding: 30px;
+        text-align: justify;
+    }
+
+    #testimonial .testimonial-row .testimonial-body div {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: rgba(189, 187, 187, 0.418);
+        border-radius: 25px;
+    }
+
+    #testimonial .testimonial-row .testimonial-body i  {
+        background-color: white;
+        border: 1px solid rgba(189, 187, 187, 0.418);
+        border-radius: 25px;
+        font-size: 20px;
+        width: 50px;
+        height: 45px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #testimonial .testimonial-row .testimonial-body p {
+        font-style: normal;
+        text-align: center;
+    }
+    #testimonial .testimonial-row .testimonial-body p:first-child {
+        margin: 0;
+        text-transform: uppercase;
+    }
+    #testimonial .testimonial-row .testimonial-body p:last-child {
+        margin: 0;
+        font-size: 10px;
+    }

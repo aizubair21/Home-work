@@ -15,6 +15,7 @@
 
     <!-- theme  -->
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/responsibe.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,7 +28,7 @@
 
             </div>
 
-            <div class="slider-control">
+            <div class="slider-control col-sm-none col-md-none">
                 <div class=" control-body">
                     <span>&#60;</span>
                     <span>&#62;</span>
@@ -48,11 +49,12 @@
     <nav>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" >
-                    <h3>Business Name</h3>
+                <div class="d-flex col-sm-12 justify-content-sm-center col-md-6 col-lg-6 col-xl-6" >
+                    <h3 class="">Business Name</h3>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 main-nav">
                     <ul>
+
                         <li><a href="#">Home</a></li>
                         <li><a href="%">Service</a></li>
                         <li><a href="#">About</a></li>
@@ -61,13 +63,31 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+
+                <div class="small-nav">
+                    <div class="nav-container">
+                        <i class="fas fa-align-right text-white"></i>
+                    
+                        <ul class="content d-block">
+                            <li><a href="#">Home <i class="fas fa-home"></i></a></li>
+                            <li><a href="%">Service <i class=" fas fa-globe-asia"></i></a></li>
+                            <li><a href="#">About <i class="fas fa-address-book"></i> </a></li>
+                            <li><a href="#">Protfolio <i class=" fas fa-image"></i></a></li>
+                            <li><a href="#">Testimonial <i class="fas fa-clipboard"></i></a></li>
+                            <li><a href="#">Contact <i class="fas fa-phone"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <div id="offer">
         <div class="container">
             <div class="top">
+               <div class="common-heing">
                 <h3>What we offer</h3>
+
+               </div>
                 <p>Vestibulum elementum ex ullamcorper ligula vulputate</p>
             </div>
 
@@ -153,10 +173,12 @@
             <div class="col-sm-6 col-md col-lg-6 col-xl-6 about-right">
                     <h3>WHO WR ARE</h3>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, tempora voluptas minima facere obcaecati voluptatibus commodi nesciunt earum ut corporis ducimus rem architecto temporibus alias quo, cupiditate delectus voluptatem, repellat nihil inventore eligendi natus laboriosam? Sit, perferendis. Unde qui rerum nostrum nemo, quibusdam velit maxime aliquid quas laborum praesentium aliquam, accusamus itaque enim, placeat odio illo libero aut adipisci quod quasi! Quo, quos delectus praesentium recusandae esse ipsum similique vitae? Fugiat voluptas magnam quia mollitia dolore temporibus, quam sed eligendi maxime. At quis repudiandae minima vero totam vel, aspernatur dolorem dignissimos quae eaque magnam iste beatae dolorum, eveniet accusamus recusandae.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ab sunt possimus eum quod, doloremque nam ad est ipsa iste expedita architecto minus natus consequatur nemo quo impedit sequi qui provident delectus illum deserunt nisi, corrupti facere. Animi ex, voluptate voluptatum laboriosam, enim dolores maiores quidem, pariatur officiis doloremque dicta.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, tempora voluptas minima facere obcaecati voluptatibus commodi nesciunt earum ut corporis ducimus rem architecto temporibus alias quo, </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ab sunt possimus eum quod, </p>
                     </div>
-                    <button>READMORE</button>
+                   <div>
+                    <button type="button">READMORE <sub><i class="fas fa-caret-right"></i> <i class="fas fa-caret-right"></i> <i class="fas fa-caret-right"></i></sub> </button>
+                   </div>
             </div>
         </div>
     </section>
@@ -184,7 +206,7 @@
 
         <div class="row portfolio-details">
             
-            <div class=" col-sm-4 details-list">
+            <div class=" col-sm-10 col-md-6 col-lg-4 details-list">
                 <ul>
                     <li class="active">All</li>
                     <li>Web</li>
@@ -198,11 +220,11 @@
 
         <div class="gallery">
             <div class="row">
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3 image-container">
                     <img class="img-fluid img-thumbnail" src="image/work1.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -214,11 +236,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
                     <img class="img-fluid img-thumbnail" src="image/work2.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -230,11 +252,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
                     <img class="img-fluid img-thumbnail" src="image/work3.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -246,11 +268,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
                     <img class="img-fluid img-thumbnail" src="image/work4.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -265,11 +287,11 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
                     <img class="img-fluid img-thumbnail" src="image/work5.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -281,11 +303,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
                     <img class="img-fluid img-thumbnail" src="image/work6.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -297,11 +319,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
                     <img class="img-fluid img-thumbnail" src="image/work7.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -313,11 +335,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 image-container">
+                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
                     <img class="img-fluid img-thumbnail" src="image/work8.png" alt="">
 
                     <div class="overlay">
-                        <div>
+                        <div class="top-content d-sm-none d-md-none d-lg-block">
                             <img src="image/eye-border.png" alt="">
                             <img src="image/eye-icon.png" alt="">
                         </div>
@@ -344,13 +366,13 @@
             </div>
         </div>
 
-        <div class="testimonial-row">
+        <div class="d-sm-flex testimonial-row">
             <div class="col-sm-4 col-md-4  testimonial-body">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum nesciunt cupiditate culpa perferendis, minus consectetur aspernatur nisi. Deleniti, nobis provident fugit quidem rem temporibus veritatis! Officia tenetur corporis eos distinctio architecto eaque excepturi dolorem, rem neque quas cupiditate. Necessitatibus fuga corrupti illo deleniti dicta laudantium quisquam maiores, ab hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum nesciunt cupiditate culpa perferendis, minus consectetur aspernatur nisi. Deleniti, nobis provident fugit quidem rem temporibus veritatis! Officia tenetur corporis eos distinctio architecto eaque excepturi dolorem, rem neque quas cupiditate. Necessitatibus fuga corrupti illo deleniti dicta laudantium quisquam maiores, ab hic?</p>
                 
                 <div>
                     <i class="fas fa-user"></i>
-                    <p class="user-heading">John Doe</p>
+                    <p class="user-heading"> <b>John Doe</b></p>
                     <p>Company Lnc</p>
                 </div>
 
@@ -358,11 +380,11 @@
             </div>
 
             <div class="col-sm-4 col-md-4  testimonial-body">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum nesciunt cupiditate culpa perferendis, minus consectetur aspernatur nisi. Deleniti, nobis provident fugit quidem rem temporibus veritatis! Officia tenetur corporis eos distinctio architecto eaque excepturi dolorem, rem neque quas cupiditate. Necessitatibus fuga corrupti illo deleniti dicta laudantium quisquam maiores, ab hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum nesciunt cupiditate culpa perferendis, minus consectetur aspernatur nisi. Deleniti, nobis provident fugit quidem rem temporibus veritatis! Officia tenetur corporis eos distinctio architecto eaque excepturi dolorem, rem neque quas cupiditate. Necessitatibus fuga corrupti illo deleniti dicta laudantium quisquam maiores, ab hic?</p>
                 
                 <div>
                     <i class="fas fa-user"></i>
-                    <p class="user-heading">John Doe</p>
+                    <p class="user-heading"> <b>John Doe</b> </p>
                     <p>Company Lnc</p>
                 </div>
 
@@ -407,11 +429,11 @@
                             <i class="me-3 mt-2 fas fa-map-marker-alt" style="color: #709dca;"></i>
                             <p>hyderabadh</p>
                         </div>
-                        <div style="display: flex; align-items:;">
+                        <div style="display: flex;">
                             <i class="me-3 mt-2 fas fa-envelope" style="color: #709dca;"></i>
                             <p>info@company.com</p>
                         </div>
-                        <div style="display: flex; align-items:;">
+                        <div style="display: flex;">
                             <i class="me-3 mt-2 fas fa-phone" style="color: #709dca;"></i>
                             <p>123 456 7890</p>
                         </div>
@@ -419,14 +441,14 @@
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <div class="d-flex align-items-start">
-                        <i class="fab fa-twitter me-3 mt-2"></i>
+                        <i class="fab fa-twitter me-3 mt-4"></i>
                         <div class="my-3">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim rem placeat voluptatum. Libero vel est odit accusamus ab hic? </p>
                             <span>5 Hours Ago</span>
                         </div>
                     </div>
                     <div class="d-flex align-items-start">
-                        <i class="fab fa-twitter me-3 mt-2"></i>
+                        <i class="fab fa-twitter me-3 mt-4"></i>
                         <div class="my-3">
                             <p>dolor sit amet consectetur adipisicing elit. Quos id, ad, veritatis sint natus esse minima, porro nostrum rerum pariatur distinctio.</p>
                             <span>6 Hours Ago</span>
@@ -435,8 +457,9 @@
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, qui.</p>
-                    <form action="#">
-                        <input type="text" placeholder="Email Address"><button type="button">submit</button>
+                    <form action="#" class="">
+                        <input class="form-control" type="text" placeholder="Email Address">
+                        <button type="button" class="form-button">submit</button>
                     </form>
                 </div>
             </div>
@@ -457,5 +480,9 @@
         </div>
        </div>
     </section>
+
+    <script>
+        var container = document.getElementsByClassName("nav-container");
+    </script>
 </body>
 </html>
