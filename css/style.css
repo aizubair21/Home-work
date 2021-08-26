@@ -1,3 +1,26 @@
+.common-heading{
+    font-family: 'open-sans-extrabold';
+    color: #709dca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.common-heading div:nth-child(1) {
+    text-align: center;
+    display: block;
+
+}
+
+.common-heading div .span-content {
+   position: absolute;
+   top: 30px;
+   left: 50%;
+   transform: translate(-50%);
+   color: #e7ad48;
+
+}
+
 #banner {
     background-image: url('../image/10.jpg');
     background-position: center;
@@ -187,6 +210,10 @@ nav h3 {
 #about-us .about-right h3 {
     font-family: 'open-sans-extrabold';
 }
+#about-us .about-right div {
+    margin: 5px 0;
+    width: 80%;
+}
 #about-us .about-right p{
     font-family: 'open-sans';
     line-height: normal;
@@ -194,6 +221,72 @@ nav h3 {
 #about-us .about-right button {
     font-family: 'open-sans';
     width: 150px;
+    height: 50px;
     border: none;
-    padding: 5px;
+    background-color: #e7ad48;
+    border: 1px solid #f8e2bb;
+}
+
+
+#portfolio {
+    margin: 20px 0;
+}
+#portfolio .row {
+    margin: 30px 0;
+}
+#portfolio .portfolio-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#portfolio .portfolio-details .details-text {
+    color: #062033;
+    font-family: 'open-sans';
+}
+
+.details-list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.details-list ul li {
+    color: black;
+    font-family: 'open-sans';
+    text-transform: capitalize;
+    padding: 3px 12px;
+    border-radius: 7px;
+}
+.details-list ul li.active{
+    background-color: #709dca;
+    color: white;
+}
+
+#portfolio img {
+    width: 100%;
+}
+
+#portfolio .image-container {
+    position: relative;
+
+}
+#portfolio .overlay {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background-color: #ffc155;
+    width: 100%;
+    height: 100%;
+}
+#portfolio .overlay div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#portfolio .overlay div:nth-child(1) img {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height:;
 }
