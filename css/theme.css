@@ -51,5 +51,16 @@ li, a {
     text-decoration: none;
     list-style-type: none;
     color: white;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: green;
+    transition: all .5s;
+}
+a:hover {
+    background-color: green;
+    transition: all .5s;
+    color: white;
 }
 
