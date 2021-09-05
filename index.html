@@ -9,9 +9,18 @@
     <!-- framework -->
     <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
 
+    <link rel="stylesheet"
+        href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+
+    <!-- filterizr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- fontawesome icon collect -->
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/fontawesome.min.css">
+
+    <!-- jquery -->
+
 
     <!-- theme  -->
     <link rel="stylesheet" href="css/theme.css">
@@ -210,13 +219,19 @@
 
         <div class="row portfolio-details">
             
-            <div class=" col-sm-10 col-md-6 col-lg-4 details-list">
-                <ul>
-                    <li class="active">All</li>
-                    <li>Web</li>
-                    <li>logo design</li>
-                    <li>WordPress</li>
-                    <li>E-commerse</li>
+            <div class=" col-sm-10 col-md-6 col-lg-6 details-list">
+                <ul class="gallery-navs">
+
+                    <li class="active"><a href="#" style="color: black;" data-filter="all">All</a></li>
+
+                    <li><a href="#" style="color: black;" data-filter="web">Web</a></li>
+
+                    <li><a href="#" style="color: black;" data-filter="logo">Logo Design</a></li>
+
+                    <li><a href="#" style="color: black;" data-filter="wp">WordPress</a></li>
+
+                    <li><a href="#" style="color: black;" data-filter="shop" >E-Commerse</a></li>
+
                 </ul>
             </div>
 
@@ -244,10 +259,26 @@
 
         </div>
 
-        <div class="gallery">
+        <div class="gallery filter-container gallery-item">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3 image-container">
-                    <img class="img-fluid img-thumbnail" src="image/work1.png" alt="">
+                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="web, all">
+                    <img class="img-fluid img-thumbnail" src="image/web1.jpeg" alt="">
+
+                    <div class="overlay">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
+                            <img src="image/eye-border.png" alt="">
+                            <img src="image/eye-icon.png" alt="">
+                        </div>
+
+                        <div class="overlay-content">
+                            <h3>Labor et dolore magnam</h3>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="wp, all">
+                    <img class="img-fluid img-thumbnail" src="image/work2.png">
 
                     <div class="overlay">
                         <div class="top-content d-sm-none d-md-none d-lg-block hide">
@@ -262,8 +293,8 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
-                    <img class="img-fluid img-thumbnail" src="image/work2.png" alt="">
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="web, all">
+                    <img class="img-fluid img-thumbnail" src="image/web3.png" alt="">
 
                     <div class="overlay">
                         <div class="top-content d-sm-none d-md-none d-lg-block hide">
@@ -273,28 +304,12 @@
 
                         <div class="overlay-content">
                             <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
+                            <p>Web Design</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
-                    <img class="img-fluid img-thumbnail" src="image/work3.png" alt="">
-
-                    <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
-                            <img src="image/eye-border.png" alt="">
-                            <img src="image/eye-icon.png" alt="">
-                        </div>
-
-                        <div class="overlay-content">
-                            <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="wp, all">
                     <img class="img-fluid img-thumbnail" src="image/work4.png" alt="">
 
                     <div class="overlay">
@@ -313,8 +328,40 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
-                    <img class="img-fluid img-thumbnail" src="image/work5.png" alt="">
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="logo, all">
+                    <img class="img-fluid img-thumbnail" src="image/logo3.png" alt="">
+
+                    <div class="overlay">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
+                            <img src="image/eye-border.png" alt="">
+                            <img src="image/eye-icon.png" alt="">
+                        </div>
+
+                        <div class="overlay-content">
+                            <h3>Labor et dolore magnam</h3>
+                            <p>Logo Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="web, logo, all">
+                    <img class="img-fluid img-thumbnail" src="image/web2.jpeg" alt="">
+
+                    <div class="overlay">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
+                            <img src="image/eye-border.png" alt="">
+                            <img src="image/eye-icon.png" alt="">
+                        </div>
+
+                        <div class="overlay-content">
+                            <h3>Labor et dolore magnam</h3>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="wp, web, all">
+                    <img class="img-fluid img-thumbnail" src="image/wp3.png" alt="">
 
                     <div class="overlay">
                         <div class="top-content d-sm-none d-md-none d-lg-block hide">
@@ -329,8 +376,8 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
-                    <img class="img-fluid img-thumbnail" src="image/work6.png" alt="">
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="shop, web, all">
+                    <img class="img-fluid img-thumbnail" src="image/shop1.jpg" alt="">
 
                     <div class="overlay">
                         <div class="top-content d-sm-none d-md-none d-lg-block hide">
@@ -340,43 +387,77 @@
 
                         <div class="overlay-content">
                             <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
-                    <img class="img-fluid img-thumbnail" src="image/work7.png" alt="">
-
-                    <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
-                            <img src="image/eye-border.png" alt="">
-                            <img src="image/eye-icon.png" alt="">
-                        </div>
-
-                        <div class="overlay-content">
-                            <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-3  image-container">
-                    <img class="img-fluid img-thumbnail" src="image/work8.png" alt="">
-
-                    <div class="overlay">
-                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
-                            <img src="image/eye-border.png" alt="">
-                            <img src="image/eye-icon.png" alt="">
-                        </div>
-
-                        <div class="overlay-content">
-                            <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
+                            <p>E-Commerse</p>
                         </div>
                     </div>
                 </div>
                 
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="web, logo, all">
+                    <img class="img-fluid img-thumbnail" src="image/logo1.png" alt="">
+
+                    <div class="overlay" >
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
+                            <img src="image/eye-border.png" alt="">
+                            <img src="image/eye-icon.png" alt="">
+                        </div>
+
+                        <div class="overlay-content">
+                            <h3>Labour et dolore magnam</h3>
+                            <p>Logo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="shop, web, all">
+                    <img class="img-fluid img-thumbnail" src="image/shop2.jpg" alt="">
+
+                    <div class="overlay">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
+                            <img src="image/eye-border.png" alt="">
+                            <img src="image/eye-icon.png" alt="">
+                        </div>
+
+                        <div class="overlay-content">
+                            <h3>Labor et dolore magnam</h3>
+                            <p>WordPress</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="wp, web, all">
+                    <img class="img-fluid img-thumbnail" src="image/wp1.png" alt="">
+
+                    <div class="overlay">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
+                            <img src="image/eye-border.png" alt="">
+                            <img src="image/eye-icon.png" alt="">
+                        </div>
+
+                        <div class="overlay-content">
+                            <h3>Labor et dolore magnam</h3>
+                            <p>WordPress</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="logo, shop, all">
+                    <img class="img-fluid img-thumbnail" src="image/logo2.jpg" alt="">
+
+                    <div class="overlay">
+                        <div class="top-content d-sm-none d-md-none d-lg-block hide">
+                            <img src="image/eye-border.png" alt="">
+                            <img src="image/eye-icon.png" alt="">
+                        </div>
+
+                        <div class="overlay-content">
+                            <h3>Labor et dolore magnam</h3>
+                            <p>Logo Design</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -510,8 +591,21 @@
 
     <script>
         var container = document.getElementsByClassName("nav-container");
+        document.querySelector('.gallery-navs').addEventListener("click", function (e) {
+            e.preventDefault();
+        });
+
+
     </script>
 
     <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+   
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
+    <!-- <script src="js/filtarizer.min.js"></script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
