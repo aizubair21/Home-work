@@ -222,15 +222,15 @@
             <div class=" col-sm-10 col-md-6 col-lg-6 details-list">
                 <ul class="gallery-navs">
 
-                    <li class="active"><a href="#" style="color: black;" data-filter="all">All</a></li>
+                    <li class="active" data-filter="all"> <i class="fas fa-allergies"></i> <a href="#" style="color: black;" >All</a></li>
 
-                    <li><a href="#" style="color: black;" data-filter="web">Web</a></li>
+                    <li type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter WEB related image only" data-filter="web"> <i class="fas fa-globe-asia"></i> <a href="#" style="color: black;"  >Web</a></li>
 
-                    <li><a href="#" style="color: black;" data-filter="logo">Logo Design</a></li>
+                    <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter LOGO related image only" data-filter="logo"> <i class="fas fa-paint-brush"></i> <a href="#" style="color: black;" >Logo Design</a></li>
 
-                    <li><a href="#" style="color: black;" data-filter="wp">WordPress</a></li>
+                    <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter WORDPRESS related image only" data-filter="wp"> <i class="fab fa-wordpress"></i> <a href="#" style="color: black;" >WordPress</a></li>
 
-                    <li><a href="#" style="color: black;" data-filter="shop" >E-Commerse</a></li>
+                    <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter E-COMMERSE related image only" data-filter="shop"> <i class="fas fa-shopping-basket"></i> <a href="#" style="color: black;"  >E-Commerse</a></li>
 
                 </ul>
             </div>
@@ -244,12 +244,18 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <ul>
-                            <li class="active"> <i class=" me-3 fas fa-allergies"></i> All</li>
-                            <li> <i class=" me-3 fas fa-globe-asia"></i> Web</li>
-                            <li> <i class=" me-3 fas fa-paint-brush"></i> logo design</li>
-                            <li> <i class=" me-3 fab fa-wordpress"></i>  WordPress</li>
-                            <li> <i class=" me-3 fas fa-shopping-bag"></i> E-commerse</li>
+                        <ul class="gallery-navs">
+
+                            <li class="active" data-filter="all"> <i class=" me-3 fas fa-allergies"></i> <a href="#"  style="color: black;">All</a></li>
+
+                            <li data-filter="web"> <i class=" me-3 fas fa-globe-asia"></i> <a href="#"  style="color: black;">Web</a> </li>
+
+                            <li data-filter="logo"> <i class=" me-3 fas fa-paint-brush"></i> <a href="#"  style="color: black;">Logo Design</a> </li>
+
+                            <li data-filter="wp"> <i class=" me-3 fab fa-wordpress"></i> <a href="#"  style="color:black;">WordPress</a> </li>
+
+                            <li data-filter="shop"> <i class=" me-3 fas fa-shopping-bag"></i> <a href="#"  style="color: black;">E-Commerse</a> </li>
+
 
                         </ul>
                       </div>
@@ -288,7 +294,7 @@
 
                         <div class="overlay-content">
                             <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
+                            <p>Work Hard</p>
                         </div>
                     </div>
                 </div>
@@ -304,7 +310,7 @@
 
                         <div class="overlay-content">
                             <h3>Labor et dolore magnam</h3>
-                            <p>Web Design</p>
+                            <p>Web</p>
                         </div>
                     </div>
                 </div>
@@ -320,7 +326,7 @@
 
                         <div class="overlay-content">
                             <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
+                            <p>Word Hard</p>
                         </div>
                     </div>
                 </div>
@@ -422,7 +428,7 @@
 
                         <div class="overlay-content">
                             <h3>Labor et dolore magnam</h3>
-                            <p>WordPress</p>
+                            <p>E-commerse</p>
                         </div>
                     </div>
                 </div>
@@ -591,14 +597,13 @@
 
     <script>
         var container = document.getElementsByClassName("nav-container");
-        document.querySelector('.gallery-navs').addEventListener("click", function (e) {
-            e.preventDefault();
-        });
+        
 
 
     </script>
 
     <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
    
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>

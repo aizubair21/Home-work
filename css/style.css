@@ -15,7 +15,7 @@
 
 .common-heading div .span-content {
    position: absolute;
-   top: 30px;
+   top: 100%;
    left: 50%;
    transform: translate(-50%);
    color: #e7ad48;
