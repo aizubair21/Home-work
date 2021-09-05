@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (min-width: 778px) {
    
     .main-nav{
         display: block;
@@ -14,9 +14,26 @@
 }
 
 
+@media (max-width:570px) {
+    #offer .bottom .bottom-row {
+        display: grid;
+    }
+    #offer .bottom .bottom-left, .bottom-right {
+        text-align: center;
+    }
 
+    #portfolio .details-list {
 
-@media (max-width: 576px) {
+        display: none;
+    }
+
+    .image-body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 778px) {
     .main-nav {
         display: none;
     }
@@ -36,20 +53,18 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        font-size: 16px;
-        background-color: gray;
+        font-size: 20px;
+        /* background-color: gray; */
         width: 100%;
         height: 100%;
-        padding: 5px 15px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        padding: 10px 25px;
     }
     .small-nav .content {
         /* border: 1px solid; */
         position: fixed;
         z-index: 999;
         left: -100%;
-        top: 80px;
+        top: 0;
         width: 50%;
         height: 90vh;
         text-align: left;
@@ -58,6 +73,7 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         transition: .5s;
+        font-size: 15px;
 
     }
     .small-nav .nav-container:hover .content{
@@ -81,8 +97,12 @@
     #banner {
         height: 250px;
     }
+    #banner .banner-text {
+        width: 100%;
+    }
     #banner .banner-body .banner-text h2 {
         font-size: 20px;
+        line-height: normal;
     }
     #banner .banner-body .banner-text p {
         font-size: 13px;
@@ -97,12 +117,11 @@
         font-weight: 600;
     }
 
-
-
-    #portfolio .details-list {
-
-        display: none;
+    #offer .top p {
+        font-size: 10px;
     }
+
+
     #portfolio .accordion ul li{
         color: black;
         text-align: left;
@@ -189,3 +208,4 @@
     .hide {
         display: none;
     }
+}
