@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/fontawesome.min.css">
 
     <!-- jquery -->
-
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- theme  -->
     <link rel="stylesheet" href="css/theme.css">
@@ -34,6 +34,12 @@
             <div class="nav-body">
                 <div class="d-flex justify-content-evenly align-items-center">
                     <div class=" logo-body" >
+                        <div class="logo-design">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <h3 class="nav-logo">Business Name</h3>
                     </div>
                     <div class="col-lg-6 col-xl-6 main-nav">
@@ -180,7 +186,7 @@
 
     <section id="about-us">
         <div class="row">
-            <div class="col-sm-6 col-md col-lg-6 col-xl-6 about-left">
+            <div class="col-sm-6 col-md col-lg-6 col-xl-6 about-left wow fadeInDownBig">
                 <img src="image/about-us.png" alt="">
             </div>
             <div class="col-sm-6 col-md col-lg-6 col-xl-6 about-right">
@@ -219,18 +225,18 @@
 
         <div class="row portfolio-details">
             
-            <div class=" col-sm-10 col-md-6 col-lg-6 details-list">
+            <div class=" col-sm-10 col-md-10 col-lg-8 details-list">
                 <ul class="gallery-navs">
 
-                    <li class="active" data-filter="all"> <i class="fas fa-allergies"></i> <a href="#" style="color: black;" >All</a></li>
+                    <li class="active nav-item" data-filter="all"> <i class="fas fa-allergies "></i> All</li>
 
-                    <li type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter WEB related image only" data-filter="web"> <i class="fas fa-globe-asia"></i> <a href="#" style="color: black;"  >Web</a></li>
+                    <li type="button" class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter WEB related image only" data-filter="web"> <i class="fas fa-globe-asia"></i> Web</li>
 
-                    <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter LOGO related image only" data-filter="logo"> <i class="fas fa-paint-brush"></i> <a href="#" style="color: black;" >Logo Design</a></li>
+                    <li data-bs-toggle="tooltip" class="nav-item" data-bs-placement="bottom" title="click to filter LOGO related image only" data-filter="logo"> <i class="fas fa-paint-brush"></i>Logo Design</li>
 
-                    <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter WORDPRESS related image only" data-filter="wp"> <i class="fab fa-wordpress"></i> <a href="#" style="color: black;" >WordPress</a></li>
+                    <li data-bs-toggle="tooltip" class="nav-item" data-bs-placement="bottom" title="click to filter WORDPRESS related image only" data-filter="wp"> <i class="fab fa-wordpress"></i> WordPress</li>
 
-                    <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="click to filter E-COMMERSE related image only" data-filter="shop"> <i class="fas fa-shopping-basket"></i> <a href="#" style="color: black;"  >E-Commerse</a></li>
+                    <li data-bs-toggle="tooltip" class="nav-item" data-bs-placement="bottom" title="click to filter E-COMMERSE related image only" data-filter="shop"> <i class="fas fa-shopping-basket"></i> E-Commerse</li>
 
                 </ul>
             </div>
@@ -246,15 +252,15 @@
                       <div class="accordion-body">
                         <ul class="gallery-navs">
 
-                            <li class="active" data-filter="all"> <i class=" me-3 fas fa-allergies"></i> <a href="#"  style="color: black;">All</a></li>
+                            <li class="active" data-filter="all"> <i class=" me-3 fas fa-allergies"></i> All</li>
 
-                            <li data-filter="web"> <i class=" me-3 fas fa-globe-asia"></i> <a href="#"  style="color: black;">Web</a> </li>
+                            <li data-filter="web"> <i class=" me-3 fas fa-globe-asia"></i> Web</li>
 
-                            <li data-filter="logo"> <i class=" me-3 fas fa-paint-brush"></i> <a href="#"  style="color: black;">Logo Design</a> </li>
+                            <li data-filter="logo"> <i class=" me-3 fas fa-paint-brush"></i> Logo Design </li>
 
-                            <li data-filter="wp"> <i class=" me-3 fab fa-wordpress"></i> <a href="#"  style="color:black;">WordPress</a> </li>
+                            <li data-filter="wp"> <i class=" me-3 fab fa-wordpress"></i> WordPress </li>
 
-                            <li data-filter="shop"> <i class=" me-3 fas fa-shopping-bag"></i> <a href="#"  style="color: black;">E-Commerse</a> </li>
+                            <li data-filter="shop"> <i class=" me-3 fas fa-shopping-bag"></i> E-Commerse</li>
 
 
                         </ul>
@@ -265,9 +271,10 @@
 
         </div>
 
-        <div class="gallery filter-container gallery-item">
-            <div class="row image-body">
-                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="web, all">
+        <div class="gallery filter-container gallery-item " id="main">
+            <div class="row image-body ">
+
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" data-category="web, all">
                     <img class="img-fluid img-thumbnail" src="image/web1.jpeg" alt="">
 
                     <div class="overlay">
@@ -281,9 +288,10 @@
                             <p>Web Design</p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="wp, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .2s;" data-category="wp, all">
                     <img class="img-fluid img-thumbnail" src="image/work2.png">
 
                     <div class="overlay">
@@ -299,7 +307,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="web, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .3s;" data-category="web, all">
                     <img class="img-fluid img-thumbnail" src="image/web3.png" alt="">
 
                     <div class="overlay">
@@ -315,7 +323,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="wp, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .4s;" data-category="wp, all">
                     <img class="img-fluid img-thumbnail" src="image/work4.png" alt="">
 
                     <div class="overlay">
@@ -334,7 +342,7 @@
             </div>
 
             <div class="row image-body">
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="logo, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .2s;" data-category="logo, all">
                     <img class="img-fluid img-thumbnail" src="image/logo3.png" alt="">
 
                     <div class="overlay">
@@ -350,7 +358,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="web, logo, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .3s;" data-category="web, logo, all">
                     <img class="img-fluid img-thumbnail" src="image/web2.jpeg" alt="">
 
                     <div class="overlay">
@@ -366,7 +374,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="wp, web, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .4s;" data-category="wp, web, all">
                     <img class="img-fluid img-thumbnail" src="image/wp3.png" alt="">
 
                     <div class="overlay">
@@ -382,7 +390,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="shop, web, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" data-category="shop, web, all">
                     <img class="img-fluid img-thumbnail" src="image/shop1.jpg" alt="">
 
                     <div class="overlay">
@@ -401,7 +409,7 @@
             </div>
 
             <div class="row image-body">
-                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="web, logo, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .4s;" data-category="web, logo, all">
                     <img class="img-fluid img-thumbnail" src="image/logo1.png" alt="">
 
                     <div class="overlay" >
@@ -417,7 +425,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4  image-container filtr-item" data-category="shop, web, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .3s;" data-category="shop, web, all">
                     <img class="img-fluid img-thumbnail" src="image/shop2.jpg" alt="">
 
                     <div class="overlay">
@@ -433,7 +441,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="wp, web, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .2s;" data-category="wp, web, all">
                     <img class="img-fluid img-thumbnail" src="image/wp1.png" alt="">
 
                     <div class="overlay">
@@ -449,7 +457,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-4 image-container filtr-item" data-category="logo, shop, all">
+                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .4s;" data-category="logo, shop, all">
                     <img class="img-fluid img-thumbnail" src="image/logo2.jpg" alt="">
 
                     <div class="overlay">
@@ -579,14 +587,15 @@
             </div>
         </div>
     </footer>
+
     <section class="footer-last">
        <div class="container">
         <div class="d-flex justify-content-between align-items-center align-content-center">
             <div>
                @2015 Business name all right reserved
-            </div>
-            <div>Designed by A.I. Zubair</div>
-            <div class="d-flex">
+            </div >
+            <div class="">Designed by A.I. Zubair</div>
+            <div class="d-flex ">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-facebook mx-2"></i>
                 <i class="fab fa-linkedin"></i>
@@ -607,7 +616,8 @@
    
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
-    <!-- <script src="js/filtarizer.min.js"></script> -->
+    <script src="js/filtarizr.min.js"></script>
+    <script src="js/wow.min.js"> </script>
     <script src="js/jquery-3.6.0.min.js"></script>
 
 

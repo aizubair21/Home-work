@@ -27,10 +27,6 @@
         display: none;
     }
 
-    .image-body {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 @media (max-width: 778px) {
@@ -117,6 +113,7 @@
         font-weight: 600;
     }
 
+
     #offer .top p {
         font-size: 10px;
     }
@@ -137,11 +134,16 @@
     #portfolio .overlay div:nth-child(1) img:last-child {
         top: -70px;
     }
+    .details-list ul li {
+        font-size: 12px;
+    }
 
 
 
-
-
+    #about-us {
+        background: linear-gradient(white, gray);
+        border-radius: 5px;
+    }
     #about-us .about-right {
         text-align: center;
     }
@@ -151,6 +153,7 @@
     }
     #about-us .about-right button {
         width: 50%;
+        box-shadow:none;
     }
 
     #testimonial .testimonial-row .testimonial-body {
@@ -172,7 +175,7 @@
         border: 1px solid rgba(189, 187, 187, 0.418);
         border-radius: 25px;
         font-size: 25px;
-        width: 10%;
+        width: 45px;
         height: 45px;
         padding: 5px;
         display: flex;
@@ -199,11 +202,16 @@
     }
 
     footer .contact-info {
-        display: flex;
-        justify-content: space-evenly;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
     }
     footer form button {
         width: 30%;
+    }
+    .footer-last {
+        font-size: 10px;
     }
     .hide {
         display: none;

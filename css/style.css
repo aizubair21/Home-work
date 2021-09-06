@@ -19,6 +19,7 @@
    left: 50%;
    transform: translate(-50%);
    color: #e7ad48;
+   width: 100%;
 
 }
 .common-heading .span-content i {
@@ -94,8 +95,49 @@
     opacity: .5;
     background-color: rgba(34, 43, 165, 0.5);
 }
+#nav .logo-body {
+    position: relative;
+    /* border: 1px solid black; */
+}
+#nav .logo-body .logo-design {
+    position: absolute;
+    top: 0;
+    left: -30%;
+     width: 50px;
+    height: 100%;
+}
+#nav .logo-body .logo-design span:first-child {
+    position: absolute;
+    width: 48%;
+    height: 45%;
+    background-color: gray;
+}
+#nav .logo-body .logo-design span:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 48%;
+    height: 45%;
+    background-color: gray;
+}
+#nav .logo-body .logo-design span:nth-child(2) {
+    position: absolute;
+    top: 7%;
+    left: 55%;
+    width: 40%;
+    height: 37%;
+    background-color: #34c434;
+}
+#nav .logo-body .logo-design span:nth-child(3) {
+    position: absolute;
+    left: 8%;
+    top: 54%;
+    width: 40%;
+    height: 40%;
+    background-color: #34c434;
+}
 
-
+/* banner style start  */
 
 
 #banner .banner-text {
@@ -308,6 +350,17 @@
 .details-list ul li.active{
     background-color: #709dca;
     color: white;
+    position: relative;
+}
+.details-list ul li.active::after {
+    content: " ";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    border-width: 11px;
+    border-style: solid;
+    border-color: #709dca transparent transparent transparent;
 }
 
 
