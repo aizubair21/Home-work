@@ -21,6 +21,7 @@ nav_item.on("click", function (e) {
 
     $(this).addClass("active");
     $('.gallery').css({"background":"#8aa7c4", "padding" : "5px"});
+    $('.image-container').css({"boxShadow":"0px 0px 5px black"});
   
 });
 

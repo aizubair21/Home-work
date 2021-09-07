@@ -269,12 +269,25 @@
     font-size: 20px;
     transition: .5s;
 }
-#offer .bottom .bottom-row:hover .bottom-left ,h4 {
-    color: #b4b632; 
+#offer .bottom .bottom-row:hover .bottom-left i{
+    animation: spin .5s linear;
+    transition-delay: 1s;
+    color: #b4b632;
+   
+}
+@keyframes spin {
+    to {transform: rotate(360deg);color: #b4b632;  }
 }
 #offer .bottom .bottom-row:hover h4 {
     color: #b4b632; 
 }
+#offer .bottom .bottom-row:hover {
+    box-shadow: 0px 0px 10px gray;
+    transition: all linear .56s;
+    border-radius: 10px;
+}
+
+
 
 
 /* About-us */
@@ -376,6 +389,7 @@
 #portfolio .image-container {
     position: relative;
     overflow: hidden;
+    margin: 10px 0;
 
 }
 #portfolio .overlay {
@@ -437,7 +451,8 @@
 #testimonial {
     width: 100%;
     height: auto;
-    margin: 40px 0;
+    margin-top: 60px;
+    margin-bottom: 40px 0;
     position: relative;
 }
 #testimonial .testimonial-row {
