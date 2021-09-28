@@ -9,8 +9,7 @@
     <!-- framework -->
     <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet"
-        href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
 
     <!-- filterizr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -29,28 +28,30 @@
 </head>
 <body>
 
+    <div id="tsparticles"></div>
+
     <div id="nav">
         <div class="">
             <div class="nav-body">
                 <div class="d-flex justify-content-evenly align-items-center">
                     <div class=" logo-body" >
-                        <div class="logo-design">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <h3 class="nav-logo">Business Name</h3>
                     </div>
                     <div class="col-lg-6 col-xl-6 main-nav">
                         <ul>
     
-                            <li><a href="#" class="active"> <span></span> Home</a></li>
-                            <li><a href="%"> <span></span> Service</a></li>
-                            <li><a href="#"> <span></span> About</a></li>
-                            <li><a href="#"> <span></span> Protfolio</a></li>
-                            <li><a href="#"> <span></span> Testimonial</a></li>
-                            <li><a href="#"> <span></span> Contact</a></li>
+                            <li><a class="nav-items active" href="index.html"> <span></span> Home</a></li>
+
+                            <li><a class="nav-items" href="#offer"> <span></span> Service</a></li>
+
+                            <li><a class="nav-items" href="#about-us"> <span></span> About</a></li>
+
+                            <li><a class="nav-items" href="#portfolio"> <span></span> Protfolio</a></li>
+
+                            <li><a class="nav-items" href="#testimonial"> <span></span> Testimonial</a></li>
+
+                            <li><a class="nav-items" href="#footer-last"> <span></span> Contact</a></li>
+
                         </ul>
                     </div>
     
@@ -59,12 +60,12 @@
                             <i class="fas fa-align-right text-white"></i>
                         
                             <ul class="content d-block">
-                                <li><a href="#"> <i class="me-2 fas fa-home"></i>Home </a></li>
-                                <li><a href="#"> <i class="me-2 fas fa-globe-asia"></i>Service </a></li>
-                                <li><a href="#"> <i class="me-2 fas fa-address-book"></i>About </a></li>
-                                <li><a href="#"> <i class="me-2 fas fa-image"></i>Protfolio</a></li>
-                                <li><a href="#"> <i class="me-2 fas fa-clipboard"></i>Testimonial</a></li>
-                                <li><a href="#"> <i class="me-2 fas fa-phone"></i>Contact</a></li>
+                                <li><a href="index.html"> <i class="me-2 fas fa-home"></i>Home </a></li>
+                                <li><a href="#service"> <i class="me-2 fas fa-globe-asia"></i>Service </a></li>
+                                <li><a href="#about-us"> <i class="me-2 fas fa-address-book"></i>About </a></li>
+                                <li><a href="#portfolio"> <i class="me-2 fas fa-image"></i>Protfolio</a></li>
+                                <li><a href="#testimonial"> <i class="me-2 fas fa-clipboard"></i>Testimonial</a></li>
+                                <li><a href="footer"> <i class="me-2 fas fa-phone"></i>Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -274,7 +275,7 @@
         <div class="gallery filter-container gallery-item " id="main">
             <div class="row image-body ">
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " data-category="web, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " data-category="web, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/web1.jpeg" alt="">
 
                     <div class="overlay">
@@ -291,7 +292,7 @@
 
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .2s;" data-category="wp, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .2s;" data-category="wp, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/work2.png">
 
                     <div class="overlay">
@@ -307,7 +308,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .3s;" data-category="web, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .3s;" data-category="web, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/web3.png" alt="">
 
                     <div class="overlay">
@@ -323,7 +324,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .4s;" data-category="wp, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .4s;" data-category="wp, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/work4.png" alt="">
 
                     <div class="overlay">
@@ -342,7 +343,7 @@
             </div>
 
             <div class="row image-body">
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .2s;" data-category="logo, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .2s;" data-category="logo, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/logo3.png" alt="">
 
                     <div class="overlay">
@@ -358,7 +359,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .3s;" data-category="web, logo, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .3s;" data-category="web, logo, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/web2.jpeg" alt="">
 
                     <div class="overlay">
@@ -374,7 +375,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item" style="transition-delay: .4s;" data-category="wp, web, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item" style="transition-delay: .4s;" data-category="wp, web, all">
                     <img class="img-fluid img-thumbnail  wow fadeIn" src="image/wp3.png" alt="">
 
                     <div class="overlay">
@@ -390,7 +391,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " data-category="shop, web, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " data-category="shop, web, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/shop1.jpg" alt="">
 
                     <div class="overlay">
@@ -409,7 +410,7 @@
             </div>
 
             <div class="row image-body">
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .4s;" data-category="web, logo, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .4s;" data-category="web, logo, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/logo1.png" alt="">
 
                     <div class="overlay" >
@@ -425,7 +426,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .3s;" data-category="shop, web, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .3s;" data-category="shop, web, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/shop2.jpg" alt="">
 
                     <div class="overlay">
@@ -441,7 +442,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item " style="transition-delay: .2s;" data-category="wp, web, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item " style="transition-delay: .2s;" data-category="wp, web, all">
                     <img class="img-fluid img-thumbnail wow fadeIn" src="image/wp1.png" alt="">
 
                     <div class="overlay">
@@ -457,7 +458,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-2 image-container filtr-item wow fadeIn" style="transition-delay: .4s;" data-category="logo, shop, all">
+                <div class="col-sm-6 col-md-3 col-lg-3 image-container filtr-item wow fadeIn" style="transition-delay: .4s;" data-category="logo, shop, all">
                     <img class="img-fluid img-thumbnail" src="image/logo2.jpg" alt="">
 
                     <div class="overlay">
@@ -610,7 +611,7 @@
 
 
     </script>
-
+    
     <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
     <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
    
